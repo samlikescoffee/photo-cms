@@ -45,5 +45,5 @@ app.use('/api', router);
 
 //starts the server and listens for requests
 app.listen(port, function() {
-    console.log('api running on port ${port}');
+    console.log("api running on port ${"+port+"}");
 });
