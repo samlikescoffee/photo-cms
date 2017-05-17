@@ -19,7 +19,7 @@ class CommentBox extends Component {
 	}
 	handleCommentSubmit(comment) {
 		let comments = this.state.data;
-		comment.id = Date.now();
+		comment._id = Date.now();
 		let newComments = comments.concat([comment]);
 		this.setState({ data: newComments });
 		axios.post(this.props.url, comment)
