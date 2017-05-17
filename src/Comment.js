@@ -9,7 +9,7 @@ class Comment extends Component {
     }
     render() {
         return (
-            <div style={ style.comment }>
+            <div style={ style.comment } >
                 <h3>{this.props.author}</h3>
                 <span dangerouslySetInnerHTML={ this.rawMarkup() } />
             </div>
